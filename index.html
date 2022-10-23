@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images\youtube.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Youtube</title>
+</head>
+
+<body class="bg-black">
+  <!--navbar -->
+  <nav class="navbar navbar-dark fixed-top p-1" id="color">
+    <div class="container-fluid">
+      <div class="nav p-1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h5 class="navbar-brand pt-2 ps-2">
+          <img src="images\youtube.png" alt="image" id="icon" />YouTube
+          <sup><small>IN</small></sup>
+        </h5>
+      </div>
+      <div class="nav" id="hight">
+        <div class="input-group">
+          <input type="text" id="input" placeholder="Search" />
+          <span class="input-group-text bg-black" id="basic-addon1"><button class="bg-black">
+              <img src="images\search 1.png" id="mag" /></button></span>&nbsp;&nbsp;
+          <img src="images\mic.png" id="mic" />
+        </div>
+      </div>
+      <div class="nav">
+        <div id="final">
+        <img src="images\grid.png" />
+        <img src="images\video-create.png" id="final" alert="search" />
+        <div class="popup1" onclick="myFunction1()">+
+          <span class="popuptext1" id="myPopup1"><a href="https://www.youtube.com/upload" target="_blank"><li>Upload Video</li></a>
+           
+            <a href="https://studio.youtube.com/channel/UC/livestreaming" target="_blank"><li>Create Videos</li></a></span>
+        </div>
+        <img src="images\bell.png" id="final" for="sub" />
+        <img src="images\login.png" id="final"/>
+       
+        
+        </div>
+        
+
+      <!-- Side navebar -->
+      <div class="offcanvas offcanvas-start text-bg-dark bg-gradient" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header justify-content-between pt-3">
+          <button class="navbar-toggler" id="close" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            <img src="images\youtube.png" alt="image" id="icon" />YouTube
+            <sup><small>IN</small></sup>
+          </h5>
+        </div>
+
+        <!-- Hamburger menu-->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-left" flex-grow-2>
+            <li class="nav-item" id="gap">
+              <img src="images\home.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/">Home</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\explore.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/feed/explore">Explore</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\shorts.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/shorts/yuKCiEsNKGs">Shorts</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\subscribe.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/feed/subscriptions">Subscriptions</a></label>
+            </li>
+            <hr />
+            <li class="nav-item" id="gap">
+              <img src="images\library.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/feed/library" id="lib">Library</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\history.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/feed/history">History</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\video-create.png" alt="image" id="icon1" />&nbsp; &nbsp;
+              <label id="lab1"><a
+                  href="https://studio.youtube.com/channel/UCWhBYMB9KZ7WiwwY5gXxD0Q/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">Your
+                  video</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\watch later.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/playlist?list=watch later">Watch Later</a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\liked.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/playlist?list=liked">Liked videos</video></a></label>
+            </li>
+            <li class="nav-item" id="gap">
+              <img src="images\Playlist.png" alt="image" id="icon1" />&nbsp;
+              &nbsp;
+              <label id="lab1"><a href="https://www.youtube.com/playlist?list=Playlist">Playlist</a></label>
+            </li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fixed side bar -->
+  <div class="side-bar">images\youtube.png
+    <img src="images\youtube.png" alt="image" class="icon2" />
+    <label class="text-white"><a href="https://www.youtube.com/">Home</a></label>
+    <img src="images\explore.png" alt="image" class="icon2" />
+    <label class="text-white"><a href="https://www.youtube.com/feed/explore">Explore</a></label>
+    <img src="images\shorts.png" alt="image" class="icon2" />
+    <label class="text-white"><a href="https://www.youtube.com/shorts/yuKCiEsNKGs">Shorts</a></label>
+    <img src="images\subscribe.png" for="fix" class="icon2" id="sub" />
+    <label id="fix" class="text-white"><a href="https://www.youtube.com/feed/subscriptions">Subscriptions</a></label>
+    <img src="images\library.png" alt="image" class="icon2" />
+    <label class="text-white"><a href="https://www.youtube.com/feed/library" id="lib">Library</a></label>
+    <img src="images\video-gallery.png" alt="image" class="icon2" />
+   
+    <div class="popup" onclick="myFunction()"><ul>Playlist</ul>
+      <span class="popuptext" id="myPopup"><a href="https://www.youtube.com/watch?v=5Sy7vG90Dh0&list=PL5vbPH9MahyaPNaQ8pqsL-deXhjV8hhE1" target="_blank">Create playlist</a>
+        <div class="popup2" onclick="myFunction2()">
+          <span class="popuptext2" id="myPopup2">
+        
+        
+        <a href="https://www.youtube.com/playlist?list=PL5vbPH9MahyaPNaQ8pqsL-deXhjV8hhE1"target="_blank">Update playlist</a>
+      </span>
+    </span>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="filters">
+    <a href="https://www.youtube.com/" class="filter-options">All</a>
+    <a href="https://www.youtube.com/results?search_query=Gaming" class="filter-options">Gaming</a>
+    <a href="https://www.youtube.com/results?search_query=Live" class="filter-options">Live</a>
+    <a href="https://www.youtube.com/results?search_query=Music" class="filter-options">Music</a>
+    <a href="https://www.youtube.com/results?search_query=Lo-fi" class="filter-options">Lo-fi</a>
+    <a href="https://www.youtube.com/results?search_query=Game-shows" class="filter-options">Game-Shows</a>
+    <a href="https://www.youtube.com/results?search_query=Gadgets" class="filter-options">Gadgets</a>
+    <a href="https://www.youtube.com/results?search_query=Comedy" class="filter-options">Comedy</a>
+    <a href="https://www.youtube.com/results?search_query=Pop" class="filter-options">Pop</a>
+    <a href="https://www.youtube.com/results?search_query=K-drama" class="filter-options">K-drama</a>
+    <a href="https://www.youtube.com/results?search_query=Movies" class="filter-options">Movies</a>
+    <a href="https://www.youtube.com/results?search_query=Short-films" class="filter-options">Short-films</a>
+    <a href="https://www.youtube.com/results?search_query=Rhymes" class="filter-options">Rhymes</a>
+    <a href="https://www.youtube.com/results?search_query=Bed Time Stories" class="filter-options">Bed Time Stories</a>
+    <a href="https://www.youtube.com/results?search_query=History" class="filter-options">History</a>
+    <a href="https://www.youtube.com/results?search_query=Education" class="filter-options">Education</a>
+    <a href="https://www.youtube.com/results?search_query=Philosophy" class="filter-options">Philosophy</a>
+    <a href="https://www.youtube.com/results?search_query=Cooking" class="filter-options">Cooking</a>
+    
+  </div>
+</div>
+
+
+  
+
+  <!-- videos -->
+  <div class="video-container bg-black text-white">
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
